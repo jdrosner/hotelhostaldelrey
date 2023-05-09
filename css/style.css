@@ -1,23 +1,21 @@
-
 /*---------------RESET INDEX-------------*/
-* { 
+* {
     margin: 0;
     padding: 0;
 }
 
 body {
+    width: 100%;
     font-family: georgia, times, serif;
     color: #333;
-    font-size: 1.2rem;
-    line-height: 1.6em;
     
+
 }
-    
-    
-    
 
 
-/*---------------RESET CONTACTO-------------*/
+
+
+
 
 
 
@@ -30,61 +28,83 @@ body {
 /* -------------HEADER--------------- */
 
 .header {
+    width: 100%;
     
     background: #333;
     color: white;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    
 }
-    
-    
+
 
 .header div img {
+    
     width: 100px;
     height: 100px;
-    
-}
 
+}
 
 
 .container {
     width: 100%;
-    align-items: center;
+    
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    
 }
+    
 
 
 
 .header a {
     color: white;
     text-decoration: none;
+    
 }
 
-
+nav .navigation {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    
+    align-items: center;
+}
 
 .navigation ul {
-    position: top;
+    width: 100%;
+    height: 150px;
+    
     text-align: center;
     list-style: none;
-    }
+    
+    
+}
 
 .navigation ul li {
     
     display: inline-block;
     
+
 }
 
 
 
 .navigation ul li a {
+    
     margin: 15px 5px 15px 5px;
-    padding: 10px;
+    padding: 5px;
     transition: all 0.4s linear;
     border-radius: 5px;
-    display:block;
+    display: block;
+    font-size: 20px;
     
 }
 
@@ -100,6 +120,12 @@ body {
 
 
 
+/*----------- FIN HEADER---------------*/
+
+
+
+
+
 /*---------------MAIN----------------*/
 
 
@@ -112,13 +138,16 @@ body {
 
 .bievenidos {
     width: 100%;
+    height: 500px;
     
+
 }
 
 .inicio {
     background-image: url(../img/neco.4.jpg);
     width: 100%;
     height: 500px;
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -131,7 +160,7 @@ body {
 }
 
 .inicio h1 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .inicio h2 {
@@ -146,7 +175,7 @@ body {
 
 
 .imghotel {
-    
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -154,32 +183,32 @@ body {
     align-items: center;
     padding: 10px;
     transition: 1s;
-    
+
 }
-    
+
 .imghotel div {
     width: 280px;
     height: 350px;
     border: 1px black solid;
-    
-    
+
+
 }
 
 
 .imghotel img {
     width: 280px;
     height: 280px;
-    
+
 }
 
 .imghotel div a {
-    
+
     transition: all 0.4s linear;
     text-decoration: none;
 }
-    
 
-.imghotel div a :hover{
+
+.imghotel div a :hover {
     background: #4a4a4a;
     color: aliceblue;
 }
@@ -189,9 +218,11 @@ body {
 .imghotel div a h3 {
     font-size: 18px;
     color: #000;
-    
-    
+
+
 }
+
+/*------------------fin main-------------------*/
 
 /*--------------EL HOTEL----------*/
 
@@ -199,13 +230,27 @@ body {
 
 .elhotel {
     width: 100%;
-    
-    
+    height: auto;
+
+
     display: grid;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-rows: 420px 420px 420px;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
     flex-wrap: wrap;
+}
+
+.elhotel-h1 {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elhotel-h1 h1{
+    font-size: 25px;
 }
 
 .elhotel div {
@@ -220,14 +265,14 @@ body {
 }
 
 .elhotel .img1 img {
-    width: 450px;
-    height: 800px;
+    width: 420px;
+    height: 750px;
     object-fit: fill;
 }
 
 .elhotel .img2 img {
-    width: 420px;
-    height: 420px;
+    width: 400px;
+    height: 400px;
     object-fit: fill;
 }
 
@@ -235,56 +280,137 @@ body {
     grid-row: 1/3;
 }
 
+/*-------------------------fin el hotel---------------*/
 
-/*---------------Servicios------------*/
+/*------------------------necochea-------------------------*/
 
-.titulo-servicio{
-    padding: 5px;
-    margin: 2px;
-    font-size: 15px;
+.necochea {
+    width: 100%;
+    line-height: 1.5em;
+    background-color: #4a4a4a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    
 }
 
 
 
-.servicios img{
+.necochea h1 {
+    width: 90%;
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+.necochea h3 {
+    width: 90%;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.necochea-h2 {
+    width: 90%;
+    padding: 5px;
+    
+    
+}
+
+.necochea-h2 h2 {
+    font-size: 20px;
+    padding: 5px;
+    margin: 1rem;
+    border: solid 2px grey;
+}
+
+
+
+
+
+
+/*-------------------------fin necochea--------------------*/
+
+/*---------------Servicios------------*/
+
+
+
+.titulo-servicio{
+    
+    
+    width: 100%;
+    line-height: 1.5em;
+    background-color: #4a4a4a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+}
+    
+
+
+
+
+.titulo-servicio h1 {
+
+    width: 90%;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.titulo-servicio p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.servicios img {
 
     width: 150px;
     height: 150px;
 }
 
-.servicios div{
+.servicios div {
+    height: 200px;
+    display: inline-block;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: solid 5px black;
+    
 }
 
 .servicios {
     width: 100%;
-    
-    
+    height: auto;
     display: grid;
     grid-template-rows: 200px 200px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px;
-    flex-wrap: wrap;
     align-items: center;
     
 }
 
-.servicios h3{
+
+
+
+.servicios h3 {
     font-size: 20px;
     text-align: center;
-    
+
 }
 
 
 
 
 
-
+/*---------------FIN SERVICIOS---------------*/
 
 /*---------------Ubicacion--------------------*/
 
@@ -292,31 +418,42 @@ body {
 
 
 .ubicacion-container {
+    width: 100%;
     background: #4a4a4a;
     color: white;
     font-family: georgia, times, serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 280px;
     flex-wrap: wrap;
+    
 }
 
-.ubicacion-title h1{
+.ubicacion-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicacion-title h1 {
+    width: 90%;
     text-align: center;
-    font-size: 1rem;
-    line-height: 1.2em;
-    padding: 40px;
+    font-size: 20px;
+    line-height: 1.5em;
+    padding: 5px;
 }
 
 .ubicacion-title p {
-    
+    width: 90%;
     text-align: center;
-    font-size: 1rem;
-    line-height: 1.2em;
-    padding: 20px;
-    
-    
+    font-size: 20px;
+    line-height: 1.5em;
+    padding: 10px;
+
+
 }
 
 
@@ -332,7 +469,7 @@ body {
     color: black;
     text-align: center;
     padding: 15px;
-    
+
 }
 
 .iframe {
@@ -346,39 +483,58 @@ iframe {
     width: 400px;
     height: 400px;
 }
+
 .turismo {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}    
-
-
-/*-----------------------------------*/
-
-
-
-/*----------------------formulario----------------------*/
-.formulario {
-    background-color: aliceblue;
-    color: #000;
-    text-align: center;
-    
 }
 
 
+/*---------------------fin ubicacion-----------------------*/
+
+/*--------------formulario---------------------*/
 
 
+.formuh1{
+    
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+section.contacto {
+    align-items: center;
+    
+}
 
 .contacto {
     
-    background-color: aliceblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
 }
 
-.contacto h1 {
-    text-align: center;
+
+
+section form{
     padding: 10px;
+    border: 1px solid black;
+    width: 80%;
+    display: inline-block;
+    
+    
 }
+
+
+
+
+/*------------------fin----formulario----------------------*/
+
 
 
 
@@ -386,24 +542,29 @@ iframe {
 
 /*-----------------FOOTER-------------*/
 
-footer .footer {
-display: flex;
-flex-direction: row;
-justify-content: center;
+footer {
+    width: 100%;
+    height: 250px;
+    position: absolute;
 }
 
+
+
+
 .footer {
-    
+
     font-family: georgia, times, serif;
     font-size: 1rem;
     line-height: 1.2em;
-    margin: 1;
-    padding: 20px;
     background: #333;
     text-align: center;
     color: white;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+    
+
 
 .footer div h3 {
     padding: 5px;
@@ -416,40 +577,302 @@ justify-content: center;
 .footer div p {
     padding: 5px;
 }
+
 .redes {
-    
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 10px;
 }
-    
+
+/*--------------------------fin footer--------------*/
 
 
-/*--------------BOOTSTRAP-----------*/
-.main-carousel{
+
+
+/*--------------BOOTSTRAP necochea -----------*/
+
+
+/*--------------MENU HAMBURGUEZA-------------------*/
+
+
+
+header ul{
+    display:none;
+}
+
+input:checked  ~ ul{
+    display:block;
+}
+
+input {
+    display: none;
+}
+
+nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+
+
+.menu-button {
+    display: inline-block;
+    margin: 1vh;
+    height: 6vh;
+    width: 6vh;
+    border: 1px solid black;
+    line-height: 6vh;
+    text-align: center;
+}
+
+
+/*-------------------fin menu hambuergueza--------------------*/
+
+
+
+.main-carousel {
+    width: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-}
+    z-index: 1;
     
 }
 
-#carouselExampleCaptions{
-    width: 100%;
-    height:450px;
+
+
+#carouselExampleCaptions {
+    width: 60%;
+    height: 400px;
+    
 
 }
 
 
 .carousel-item img {
-    width: 400px;
-    height: 450px;
+    
+    width: 300px;
+    height: 400px;
 }
 
-.carousel-item{
+.carousel-item {
     
     transition: transform 2s ease, opacity .5 sease-out;
 }
+
+/*-----------------fin bootstrap-----------------*/
+
+/*------------@MEDIA---------------*/
+
+
+
+
+
+
+
+/*-----------menu hambuergueza-------------------*/
+
+
+@media screen and (min-width: 992px){
+    .menu-button{
+    display: none;
+    }
+
+    
+    
+    .navigation ul{
+    display: block;
+    
+    }
+    
+    .navigation ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 8vh;
+    margin: 0.5em;
+    }
+}
+
+/*---------------fin menu hambuergueza------------------*/
+
+
+/*-----------------el hotel fotos--------------------*/
+
+@media screen and (max-width:823px){
+    .elhotel {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr;
+
+
+    }
+}
+
+/*------------------fin hotel fotos---------*/
+
+/*-----------------------servicios-----------------------*/
+
+@media screen and (max-width:1050px){
+    .servicios {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:700px){
+    .servicios {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:580px){
+    .servicios {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr;
+    }
+}
+
+/*---------------fin servicios---------------------*/
+
+/*----------------necochea-------------------------*/
+
+@media screen and (max-width:900px){
+
+    #carouselExampleCaptions {
+    
+        width: 80%;
+        height: 400px;
+    
+    }
+    
+}
+    
+@media screen and (max-width:690px){
+
+    
+    
+    
+    
+    #carouselExampleCaptions {
+        width: 100%;
+        height: 400px;
+        
+    
+    }
+}
+
+
+
+
+
+
+
+/*-----------------formulario--------------------*/
+
+@media screen and (max-width:829px){
+    .row {
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        
+    }
+    
+}
+
+/*-----------------ubicacion---------------*/
+
+@media screen and (max-width:1419px){
+
+    .ubicacion-container {
+        
+        height: 380px;
+        
+        
+    }
+}
+
+@media screen and (max-width:985px){
+
+    .ubicacion-container {
+        height: 550px;
+    }
+
+}
+
+@media screen and (max-width:700px){
+
+    .ubicacion-container {
+        height: 600px;
+    }
+
+}
+
+@media screen and (max-width:592px){
+
+    .ubicacion-container {
+        height: 700px;
+    }
+
+}
+
+@media screen and (max-width:522px){
+
+    .ubicacion-container {
+        height: 800px;
+    }
+
+}
+
+@media screen and (max-width:432px){
+
+    .ubicacion-container {
+        height: 1000px;
+    }
+
+}
+
+
+
+/*-----------------------imagen turismo y mapa---------------------*/
+
+@media screen and (max-width:752px){
+    .turismo img {
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .turismo img {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:400px){
+    iframe {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+
+
+
+/*-----------------fin @media -----------------------*/

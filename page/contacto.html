@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Hotel Hostal Del Rey</title>
 
 </head>
+
 <body>
     <header class="header">
         <div class="container">
-            
+
             <a href="../index.html"><img src="../img/logo.jpg.png" alt="Logo"></a>
-            
+
             <nav class="navigation">
+                <input type="checkbox" id="menu">
+                <label class="menu-button" for="menu"> ☰ </label>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="../page/elhotel.html">El Hotel</a></li>
@@ -22,131 +28,152 @@
                     <li><a href="../page/necochea.html">Necochea</a></li>
                     <li><a href="../page/ubicacion.html">Ubicación</a></li>
                     <li><a href="../page/contacto.html">Contacto</a></li>
-                    
+
                 </ul>
-                
-                
+
+
             </nav>
         </div>
     </header>
-        <main class="contacto">
-            <section>
-                <h1>Registrate</h1>
-            </section>
-                <section class="formulario">
-                <label for="Nombre">Nombre</label>
-                <div>
-                
-                    <input type="text" 
-                    name="Nombre" 
-                    id="Nombre">
-                </div>
+    <main>
+        <section class="formuh1">
 
-                <label for="Apellido">Apellido</label>
-                <div>
-                    
-                    <input type="text" 
-                    name="Apellido" 
-                    id="Apellido">
-                </div>
+            <div><h1>FORMULARIO</h1></div>
 
-
-            <div class="genero">
-                
-                
-                    <h3>Genero</h3>
-                    <label for="Masculino">Masculino</label>
-                    <input type="radio" 
-                    name="Genero" 
-                    id="Masculino">
-                
-                
-                
-
-                <label for="Femenino">Femenino</label>
-                
-                    <input type="radio" 
-                    name="Genero" 
-                    id="Femenino">
-
-                
-                
-                <label for="Otros">Otros</label>
-                
-                    <input type="radio" 
-                    name="Genero" 
-                    id="Otros">
-            </div>
-                
-                
-                
-                
-                <label for="Email">Email</label>
-                <div>
-                    
-                    <input type="Email" 
-                    name="Email" 
-                    id="Email">
-                </div>
-                
-                <label for="Telefono">Telefono</label>
-                <div>
-
-                    <input type="Telefono" 
-                    name="Telefono" 
-                    id="Telefono">
-                </div>
-
-                <label for="Fecha de Ingreso">Fecha de Ingreso</label>
-                <div>
-
-                    <input type="Fecha de Ingreso" 
-                    name="Fecha de Ingreso" 
-                    id="Fecha de Ingreso">
-                
-                </div>
-
-                <label for="Fecha de Egreso">Fecha de Egreso</label>
-                <div>
-
-                    <input type="Fecha de Egreso"
-                    name="Fecha de Egreso" 
-                    id="Fecha de Egreso">
-                
-                </div>
-                
-                <label for="Consulta">Consulta</label>
-                <div>
-
-                    <textarea name="Consulta" 
-                    id="Consulta" 
-                    cols="30" 
-                    rows="10"></textarea>
-                </div>
-
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Restablecer">
-                </section>
-
-        </main>
-
-    
-        <footer class="footer">
-        
-            <div>
-                <h3>Necochea, Prov. Buenos Aires | Calle 81 N° 335</h3>
-                <h4>Whatsapp: +54 9 2262410114 | Telefono: +54 9 2262 425170</h4>
-                <p>HOTEL HOSTAL DEL REY **</p>
-                <div class="redes">
-                <a href="https://instagram.com/hostaldelrey?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener"><img src="../img/instagram.jpg.png" alt="Entrar a Instagram"></a>
-                <a href="https://www.facebook.com/hostal.delrey.3?mibextid=ZbWKwL" target="_blank" rel="noopener"><img src="../img/face.jpg.png" alt="Entrar a Facebook"></a>
-                <a href="mailto:hostaldelrey@live.com" target="_blank" rel="noopener"><img src="../img/email.jpg.png" alt="Enviar Email"></a>
-                <a href="https://wa.me/5492262410114" target="_blank" rel="noopener"><img src="../img/whatsapp.jpg.png" alt="Enviar mensaje a través de WhatsApp"></a>
-                <a href="tel:+5492262425170" target="_blank" rel="noopener"><img src="../img/tel.jpg.png" alt="Llamar a través de Teléfono"></a>
-                </div>
-                
-            </div>
+        </section>
+        <section class="contacto">
             
-        </footer>
+
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4 position-static">
+                    <label for="nombre" class="form-label">NOMBRE</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 position-static">
+                    <label for="apellido" class="form-label">APELLIDO</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 position-static">
+                    <label for="e-mail" class="form-label">E-MAIL</label>
+                    <div class="input-group position-static has-validation">
+                        <span class="input-group-text" id="e-mailPrepend">@</span>
+                        <input type="text" class="form-control position-static" id="e-mail"
+                            aria-describedby="validationTooltipUsernamePrepend" required>
+                        <div class="invalid-tooltip">
+                            Elija un nombre de usuario único y válido..
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 position-static">
+                    <label for="direccion" class="form-label">DIRECCIÓN</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Dirección" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+
+                <div class="col-md-6 position-static">
+                    <label for="ciudad" class="form-label">CIUDAD</label>
+                    <input type="text" class="form-control" id="ciudad" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3 position-static">
+                    <label for="provincia" class="form-label">PROVINCIA</label>
+                    <select class="form-select" id="provincia" required>
+                        <option selected disabled value="">Seleccionar...</option>
+                        <option>Buenos Aires</option>
+                        <option>Catamarca</option>
+                        <option>Chaco</option>
+                        <option>Chubut</option>
+                        <option>Ciudad Autónoma de Buenos Aires (CABA)</option>
+                        <option>Córdoba</option>
+                        <option>Corrientes</option>
+                        <option>Entre Ríos</option>
+                        <option>Formosa</option>
+                        <option>Jujuy</option>
+                        <option>La Pampa</option>
+                        <option>La Rioja</option>
+                        <option>Mendoza</option>
+                        <option>Misiones</option>
+                        <option>Neuquén</option>
+                        <option>Río Negro</option>
+                        <option>Salta</option>
+                        <option>San Juan</option>
+                        <option>San Luis</option>
+                        <option>Santa Cruz</option>
+                        <option>Santa Fe</option>
+                        <option>Santiago del Estero</option>
+                        <option>Tierra del Fuego</option>
+                        <option>Tucumán</option>
+
+                    </select>
+                    <div class="invalid-tooltip">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3 position-static">
+                    <label for="codigo postal" class="form-label">CODIGO POSTAL</label>
+                    <input type="text" class="form-control" id="codigo postal" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+
+                <div class="col-mb-3" position-static>
+                    <label for="mensaje" class="form-label">CONTACTO</label>
+                    <textarea class="form-control" id="mensaje" placeholder="Mensaje" ></textarea>
+                    <div class="invalid-tooltip">
+                        Please provide a valid mensaje.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">ENVIAR</button>
+                </div>
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div>
+            <h3>Necochea, Prov. Buenos Aires | Calle 81 N° 335</h3>
+            <h4>Whatsapp: +54 9 2262410114 | Telefono: +54 9 2262 425170</h4>
+            <p>HOTEL HOSTAL DEL REY **</p>
+            <div class="redes">
+                <a href="https://instagram.com/hostaldelrey?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener"><img
+                        src="../img/instagram.jpg.png" alt="Entrar a Instagram"></a>
+                <a href="https://www.facebook.com/hostal.delrey.3?mibextid=ZbWKwL" target="_blank" rel="noopener"><img
+                        src="../img/face.jpg.png" alt="Entrar a Facebook"></a>
+                <a href="mailto:hostaldelrey@live.com" target="_blank" rel="noopener"><img src="../img/email.jpg.png"
+                        alt="Enviar Email"></a>
+                <a href="https://wa.me/5492262410114" target="_blank" rel="noopener"><img src="../img/whatsapp.jpg.png"
+                        alt="Enviar mensaje a través de WhatsApp"></a>
+                <a href="tel:+5492262425170" target="_blank" rel="noopener"><img src="../img/tel.jpg.png"
+                        alt="Llamar a través de Teléfono"></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
