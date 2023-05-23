@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: georgia, times, serif;
+    color: #333;
+    
+
+}
+
+/*--------------MENU HAMBURGUEZA-------------------*/
+
+
+
+header ul{
+    display:none;
+}
+
+input:checked  ~ ul{
+    display:block;
+}
+
+input {
+    display: none;
+}
+
+nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+
+
+.menu-button {
+    display: inline-block;
+    margin: 1vh;
+    height: 6vh;
+    width: 6vh;
+    border: 1px solid black;
+    line-height: 6vh;
+    text-align: center;
+}
+
+
+/*-------------------fin menu hambuergueza--------------------*/
+
+
+

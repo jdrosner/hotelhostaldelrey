@@ -1,4 +1,4 @@
-/*---------------RESET INDEX-------------*/
+/*---------------RESET INDEX----pasado---------*/
 * {
     margin: 0;
     padding: 0;
@@ -63,12 +63,15 @@ body {
     
 
 
+/*-------------duda-------------------*/
 
 .header a {
     color: white;
     text-decoration: none;
     
 }
+
+/*-------------duda-------------------*/
 
 nav .navigation {
     width: 100%;
@@ -222,7 +225,7 @@ nav .navigation {
 
 }
 
-/*------------------fin main-------------------*/
+/*------------------fin main---pasado en sass----------------*/
 
 /*--------------EL HOTEL----------*/
 
@@ -540,7 +543,7 @@ section form{
 
 
 
-/*-----------------FOOTER-------------*/
+/*-----------------FOOTER-----pasado--------*/
 
 footer {
     width: 100%;
@@ -636,7 +639,7 @@ nav label {
 }
 
 
-/*-------------------fin menu hambuergueza--------------------*/
+/*-------------------fin menu hambuergueza-----pasado---------------*/
 
 
 

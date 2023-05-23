@@ -1,0 +1,170 @@
+@media screen and (min-width: 992px){
+    .header .container .navigation .menu-button{
+    display: none;
+    }
+
+    
+    
+    .header .container .navigation ul{
+    display: block;
+    
+    }
+    
+    .header .container .navigation ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 8vh;
+    margin: 0.5em;
+    }
+}
+
+@media screen and (max-width:823px){
+    main section .elhotel {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr;
+
+
+    }
+}
+
+@media screen and (max-width:1050px){
+    main .border-servicios .servicios {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:700px){
+    main .border-servicios .servicios {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:580px){
+    main .border-servicios.servicios {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:900px){
+
+    main .main-carousel #carouselExampleCaptions {
+    
+        width: 80%;
+        height: 400px;
+    
+    }
+    
+}
+    
+@media screen and (max-width:690px){
+
+    
+    
+    
+    
+    main .main-carousel #carouselExampleCaptions {
+        width: 100%;
+        height: 400px;
+        
+    
+    }
+}
+
+@media screen and (max-width:829px){
+    main .contacto .row {
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        
+    }
+    
+}
+
+@media screen and (max-width:1419px){
+
+    main .ubicacion-container {
+        
+        height: 380px;
+        
+        
+    }
+}
+
+@media screen and (max-width:985px){
+
+    main .ubicacion-container {
+        height: 550px;
+    }
+
+}
+
+@media screen and (max-width:700px){
+
+    main .ubicacion-container {
+        height: 600px;
+    }
+
+}
+
+@media screen and (max-width:592px){
+
+    main .ubicacion-container {
+        height: 700px;
+    }
+
+}
+
+@media screen and (max-width:522px){
+
+    main .ubicacion-container {
+        height: 800px;
+    }
+
+}
+
+@media screen and (max-width:432px){
+
+    main .ubicacion-container {
+        height: 1000px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:752px){
+    main .enlaces-ubicacion .turismo img {
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:400px){
+    main .enlaces-ubicacion .turismo img {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:400px){
+    main .enlaces-ubicacion .iframe iframe {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+
