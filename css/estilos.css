@@ -58,33 +58,36 @@ body .header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-    body .header .container img {
+    body .header .container a img {
+      transition: 1s;
       width: 100px;
       height: 100px; }
-    body .header .container .navigation {
+      body .header .container a img:hover {
+        transform: rotateY(360deg); }
+  body .header .navigation {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center; }
+    body .header .navigation ul {
       width: 100%;
-      height: 120px;
-      display: flex;
-      align-items: center; }
-      body .header .container .navigation ul {
-        width: 100%;
-        height: 150px;
-        text-align: center;
-        list-style: none; }
-        body .header .container .navigation ul li {
-          display: inline-block; }
-          body .header .container .navigation ul li a {
-            margin: 15px 5px 15px 5px;
-            padding: 5px;
-            transition: all 0.4s linear;
-            border-radius: 5px;
-            display: block;
-            color: white;
-            text-decoration: none;
-            font-size: 20px; }
-            body .header .container .navigation ul li a:hover {
-              background: #4a4a4a;
-              color: #000; }
+      height: 150px;
+      text-align: center;
+      list-style: none; }
+      body .header .navigation ul li {
+        display: inline-block; }
+        body .header .navigation ul li a {
+          margin: 15px 5px 15px 5px;
+          padding: 5px;
+          transition: all 0.4s linear;
+          border-radius: 5px;
+          display: block;
+          color: white;
+          text-decoration: none;
+          font-size: 20px; }
+          body .header .navigation ul li a:hover {
+            background: #4a4a4a;
+            color: #000; }
 
 .main {
   align-items: center;
@@ -203,27 +206,28 @@ main .ubicacion-container {
       font-size: 20px;
       line-height: 1.5em;
       padding: 10px; }
-  main .ubicacion-container .enlaces-ubicacion {
-    flex-wrap: wrap;
-    width: 100%; }
-    main .ubicacion-container .enlaces-ubicacion .ubicacion {
-      background: white;
-      color: black;
-      text-align: center;
-      padding: 15px; }
-    main .ubicacion-container .enlaces-ubicacion .iframe {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      main .ubicacion-container .enlaces-ubicacion .iframe iframe {
-        width: 400px;
-        height: 400px; }
-    main .ubicacion-container .enlaces-ubicacion .turismo {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
+
+main .enlaces-ubicacion {
+  flex-wrap: wrap;
+  width: 100%; }
+  main .enlaces-ubicacion .ubicacion {
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 15px; }
+  main .enlaces-ubicacion .iframe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .enlaces-ubicacion .iframe iframe {
+      width: 400px;
+      height: 400px; }
+  main .enlaces-ubicacion .turismo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 main .titulo-servicio {
   width: 100%;
@@ -242,28 +246,29 @@ main .titulo-servicio {
   main .titulo-servicio p {
     padding: 10px;
     font-size: 20px; }
-  main .titulo-servicio .border-servicios .servicios {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
-    align-items: center; }
-    main .titulo-servicio .border-servicios .servicios div {
-      height: 200px;
-      display: inline-block;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: solid 5px black; }
-      main .titulo-servicio .border-servicios .servicios div img {
-        width: 150px;
-        height: 150px; }
-      main .titulo-servicio .border-servicios .servicios div h3 {
-        font-size: 20px;
-        text-align: center; }
+
+main .border-servicios .servicios {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  align-items: center; }
+  main .border-servicios .servicios div {
+    height: 200px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px black; }
+    main .border-servicios .servicios div img {
+      width: 150px;
+      height: 150px; }
+    main .border-servicios .servicios div h3 {
+      font-size: 20px;
+      text-align: center; }
 
 main .necochea {
   width: 100%;
@@ -292,17 +297,17 @@ main .necochea {
       margin: 1rem;
       border: solid 2px grey; }
 
-main section .elhotel-h1 {
+main .elhotel-h1 {
   width: 100%;
   height: 4rem;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center; }
-  main section .elhotel-h1 h1 {
+  main .elhotel-h1 h1 {
     font-size: 25px; }
 
-main section .elhotel {
+main .elhotel {
   width: 100%;
   height: auto;
   display: grid;
@@ -310,18 +315,18 @@ main section .elhotel {
   grid-template-columns: 1fr 1fr;
   gap: 5px;
   flex-wrap: wrap; }
-  main section .elhotel div {
+  main .elhotel div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  main section .elhotel .img1 .primer-item {
+  main .elhotel .img1 {
     grid-row: 1/3; }
-    main section .elhotel .img1 .primer-item img {
+    main .elhotel .img1 img {
       width: 420px;
-      height: 750px;
+      height: 720px;
       object-fit: fill; }
-  main section .elhotel .img2 img {
+  main .elhotel .img2 img {
     width: 400px;
     height: 400px;
     object-fit: fill; }
